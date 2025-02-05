@@ -1,0 +1,46 @@
+<section>
+    <h2 class="text-4xl font-mono pb-20 pl-30 ">Bogens kapitler</h2>
+    <div class="grid md:grid-cols-2 gap-6 p-6 font-mono text-lg pl-50">
+        <div x-data="{ open: null }">
+            <ul class="list-none space-y-4">
+                <li>
+                    <button @click="open === 1 ? open = null : open = 1" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 1 - Intro til street foto</button>
+                    <p x-show="open === 1" x-transition class="mt-2 p-2 bg-gray-100 text-black">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry)...</p>
+                </li>
+                <li>
+                    <button @click="open === 2 ? open = null : open = 2" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 2 - Om at skyde street</button>
+                    <p x-show="open === 2" x-transition class="mt-2 p-2 bg-gray-100 text-black">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det!...</p>
+                </li>
+                <li>
+                    <button @click="open === 3 ? open = null : open = 3" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 3 - Om at finde det rette motiv</button>
+                    <p x-show="open === 3" x-transition class="mt-2 p-2 bg-gray-100 text-black">Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver...</p>
+                </li>
+                <li>
+                    <button @click="open === 4 ? open = null : open = 4" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 4 - Digital street foto</button>
+                    <p x-show="open === 4" x-transition class="mt-2 p-2 bg-gray-100 text-black">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere...</p>
+                </li>
+            </ul>
+        </div>
+
+        <div x-data="{ open: null }">
+            <ul class="list-none space-y-4">
+                <li>
+                    <button @click="open === 5 ? open = null : open = 5" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 5 - Analog street foto</button>
+                    <p x-show="open === 5" x-transition class="mt-2 p-2 bg-gray-100 text-black">Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital...</p>
+                </li>
+                <li>
+                    <button @click="open === 6 ? open = null : open = 6" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 6 - Om at skyde sort/hvid</button>
+                    <p x-show="open === 6" x-transition class="mt-2 p-2 bg-gray-100 text-black">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor?...</p>
+                </li>
+                <li>
+                    <button @click="open === 7 ? open = null : open = 7" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 7 - Kreative teknikker</button>
+                    <p x-show="open === 7" x-transition class="mt-2 p-2 bg-gray-100 text-black">Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver...</p>
+                </li>
+                <li>
+                    <button @click="open === 8 ? open = null : open = 8" class="font-bold text-rose-950 w-full text-left hover:bg-rose-500 p-2 transition-all">Kapitel 8 - Kom helt tæt på!</button>
+                    <p x-show="open === 8" x-transition class="mt-2 p-2 bg-gray-100 text-black">Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på?...</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,35 @@
 ---
+import Link from '../components/Link.astro'
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+<section>
+    <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-rose-950">
+        <div id="navbar" class="flex flex-row justify-between items-center">
+            <div id="logo">
+                <a href="#link1" class="text-white font-mono text-lg">Københavner Billeder</a>
+            </div>
+            <nav id="desktopmenu" class="hidden lg:block">
+                <ul class="flex flex-row gap-6 text-white font-mono text-lg">
+                    <li><Link href="#" class="">Københavnerbilleder</Link></li>
+                    <li><Link href="#" class="">Bogens indhold</Link></li>
+                    <li><Link href="#" class="">Forfatteren</Link></li>
+                    <li><Link href="#" class="">Køb nu</Link></li>
+                </ul>
+            </nav>
+            <button id="burgermenu" class="lg:hidden text-white font-mono text-lg" x-on:click="showmenu = !showmenu">
+                Menu
+            </button>
+        </div>
+        <nav id="mobilmenu" class="flex flex-col content-center pt-4 text-white font-mono text-lg" 
+            x-show="showmenu" x-transition 
+            x-on:click="showmenu = false" 
+            x-on:click.outside="showmenu = false">
+            <ul>
+                <li class="text-center py-2 border-y-2"><Link href="#" class="">Københavnerbilleder</Link></li>
+                <li class="text-center py-2 border-b-2"><Link href="#" class="">Bogens indhold</Link></li>
+                <li class="text-center py-2 border-b-2"><Link href="#" class="">Forfatteren</Link></li>
+                <li class="text-center py-2 border-b-2"><Link href="#" class="">Køb nu</Link></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+

@@ -1,0 +1,74 @@
+<section class="max-w-md mx-auto p-6 bg-gray-100 rounded-lg shadow-lg font-mono">
+    <h1 class="text-3xl font-bold text-center text-rose-950 mb-6">Køb bogen</h1>
+    <form class="space-y-4">
+        <!-- Antal -->
+        <div>
+            <label for="antal" class="block font-bold text-rose-950">Antal:</label>
+            <select id="antal" name="antal" class="w-full p-2 border border-gray-300 rounded-md">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <!-- Levering -->
+        <fieldset class="border border-gray-300 p-4 rounded-md">
+            <legend class="font-bold text-rose-950">Levering:</legend>
+            <label class="flex items-center">
+                <input type="radio" name="levering" value="postnord" class="mr-2">
+                PostNord
+            </label>
+            <label class="flex items-center">
+                <input type="radio" name="levering" value="afhent" class="mr-2">
+                Afhent selv
+            </label>
+        </fieldset>
+
+        <!-- Navn -->
+        <div>
+            <label for="navn" class="block font-bold text-rose-950">Navn:</label>
+            <input type="text" id="navn" name="navn" value="Anders And" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+
+        <!-- Adresse -->
+        <div>
+            <label for="adresse" class="block font-bold text-rose-950">Adresse:</label>
+            <input type="text" id="adresse" name="adresse" value="Paradisæblevej 8" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email" class="block font-bold text-rose-950">E-mail:</label>
+            <input type="email" id="email" name="email" value="anders@andeby.dk" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+
+        <!-- Postnummer & By -->
+        <div class="flex gap-4">
+            <div class="w-1/2">
+                <label for="postnummer" class="block font-bold text-rose-950">Postnummer:</label>
+                <input type="text" id="postnummer" name="postnummer" placeholder="0900" class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+            <div class="w-1/2">
+                <label for="by" class="block font-bold text-rose-950">By:</label>
+                <input type="text" id="by" name="by" value="Andeby" class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+        </div>
+
+        <!-- Telefon -->
+        <div>
+            <label for="telefon" class="block font-bold text-rose-950">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" value="555-555" class="w-full p-2 border border-gray-300 rounded-md">
+        </div>
+
+        <!-- Nyhedsbrev -->
+        <div class="flex items-center">
+            <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" class="mr-2">
+            <label for="nyhedsbrev" class="text-gray-700">Ja tak til nyhedsbreve og tilbud</label>
+        </div>
+
+        <!-- Knap -->
+        <button type="submit" class="w-full bg-rose-500 text-white font-bold py-2 px-4 rounded-md hover:bg-rose-600 transition">
+            Til betaling
+        </button>
+    </form>
+</section>
