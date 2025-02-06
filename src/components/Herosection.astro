@@ -1,6 +1,7 @@
 <section class="grid md:grid-cols-2 items-center">
-    <img src="/public/img/kobenhavnerbilleder_aaben_venstre.jpg" alt="billede" class="w-full h-auto">
-
+    <div class="border-4 border-rose-950 overflow-hidden">
+    <img src="/public/img/kobenhavnerbilleder_aaben_venstre.jpg" alt="billede" class="w-full h-auto hover:scale-140">
+</div>
     <div class="p-10">
         <h1 class="font-mono text-2xl">  
             Københavnerbilleder - en guide til hipster foto af Sten Simons  
@@ -8,11 +9,16 @@
 
         <h1 class="font-mono text-xl mt-10">Hent et prøvekapitel</h1>
 
+        
+
         <form class="font-mono mt-4 max-w-md">
             <!-- E-mail -->
     
             <input type="email" id="email" name="email" placeholder="Indtast din e-mail" required  
                 class="w-full p-2 border border-gray-300 rounded-md text-black">
+
+                <input type="checkbox" id="prøvekapitlet" name="prøvekapitlet" value="prøvekapitlet">
+            <label class="text-xs text-slate-600" for="checkbox">* Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om bogen ved at downloade prøvekapitlet.</label>
 
             <!-- Knap -->
             <button type="submit"  
@@ -20,5 +26,6 @@
                 Hent prøvekapitel
             </button>
         </form>
+        
     </div>
 </section>
